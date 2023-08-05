@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "None",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "strict": false,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./node_modules/cypress/**/*.js",
+    "cypress/e2e/**/*.js",
+    "cypress/support/**/*.js"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "learing-test-e2e",
+  "author": "PATRICK OBIASO",
+  "version": "1.0.0",
+  "description": "Learning cypress testing",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "open": "npx cypress open --env TEST_ENVIRONMENT=sit"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.21.8",
+    "@badeball/cypress-cucumber-preprocessor": "^17.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress": "^12.12.0",
+    "cypress-recurse": "^1.35.2",
+    "esbuild": "^0.17.18"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "chance": "^1.1.11",
+    "cryptr": "^6.0.3",
+    "dayjs": "^1.11.7",
+    "dayjs-business-days": "^1.0.4",
+    "form-data": "^4.0.0",
+    "node-fetch": "^2.6.1",
+    "pdf-parse": "^1.1.1",
+    "pg": "^8.7.1",
+    "uuid": "^9.0.0",
+    "word-extractor": "^1.0.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/common/stepsDefinition/**/*.{js,ts}",
+      "[filepath]/**/*.{js,ts}",
+      "[filepath].{js.ts}",
+      "cypress/e2e/test/**/*.{js,ts}"
+    ],
+    "html": {
+      "enabled": true
+    }
+  },
+  "keywords": [
+    "testing",
+    "e2e"
+  ]
+}
